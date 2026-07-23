@@ -1,107 +1,527 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ensayo digital sobre política proteccionista y agencia artesanal en Bogotá, 1847-1854.">
+  <title>Aranceles, oficios y acción política</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5.3 desde CDN: no necesitas descargar la biblioteca -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Investigación sobre San Cristóbal Sur</title>
-
-    <link rel="stylesheet" href="estilos.css">
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#menuPrincipal" data-bs-offset="90" tabindex="0">
 
-    <header>
-        <h1>San Cristóbal Sur</h1>
+  <!-- MENÚ FIJO -->
+  <nav id="menuPrincipal" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" href="#inicio">Agencia artesanal</a>
 
-        <p>
-            Archivo digital de una investigación sobre espacio,
-            trabajo, materialidad y transformación urbana.
-        </p>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContenido"
+              aria-controls="navbarContenido"
+              aria-expanded="false"
+              aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <nav>
-            <a href="#proyecto">Proyecto</a>
-            <a href="#recorridos">Recorridos</a>
-            <a href="#archivo">Archivo visual</a>
-            <a href="#mapas">Mapas</a>
-            <a href="#hallazgos">Hallazgos</a>
-            <a href="#bibliografia">Bibliografía</a>
-        </nav>
-    </header>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contexto">Contexto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cronologia">Cronología</a></li>
+          <li class="nav-item"><a class="nav-link" href="#repertorios">Repertorios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#archivo">Archivo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#argumento">Argumento</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main>
+  <main>
 
-        <section id="proyecto">
-            <h2>El proyecto</h2>
-
-            <p>
-                En esta sección puedes presentar el problema,
-                la pregunta de investigación, los objetivos
-                y la relevancia del estudio.
+    <!-- PORTADA -->
+    <section id="inicio" class="portada">
+      <div class="container py-5">
+        <div class="row align-items-end min-vh-100 py-5">
+          <div class="col-lg-8">
+            <p class="etiqueta-superior">Ensayo digital · Bogotá, 1847-1854</p>
+            <h1>Aranceles, oficios y acción política</h1>
+            <p class="bajada">
+              Política proteccionista y agencia de los artesanos bogotanos
+              durante los debates sobre libre comercio, trabajo y ciudadanía.
             </p>
-        </section>
+            <a class="btn btn-outline-light btn-lg mt-3" href="#problema">
+              Iniciar recorrido
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="recorridos">
-            <h2>Recorridos de investigación</h2>
+    <!-- IMAGEN PRINCIPAL -->
+    <figure class="cover-figure">
+      <!-- Reemplaza portada.jpg por tu imagen -->
+      <img src="assets/img/portada.svg"
+           class="cover-image"
+           alt="Imagen de portada provisional sobre talleres, herramientas y vida artesanal">
+      <figcaption class="container py-2">
+        Imagen provisional. Sustituye este archivo y registra autor, fecha,
+        procedencia, signatura y condiciones de uso.
+      </figcaption>
+    </figure>
 
-            <p>
-                Aquí puedes organizar los desplazamientos,
-                lugares, temporalidades y actores vinculados
-                con la investigación.
+    <!-- PROBLEMA -->
+    <section id="problema" class="seccion seccion-clara">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <span class="separador"><span>01</span> Problema</span>
+          </div>
+          <div class="col-lg-8">
+            <header class="encabezado-seccion">
+              <h2>Del arancel a la acción colectiva</h2>
+              <p class="lead">
+                ¿Cómo convirtieron los artesanos bogotanos una controversia
+                económica sobre importaciones y protección aduanera en una
+                intervención pública sobre el trabajo y el orden republicano?
+              </p>
+            </header>
+
+            <div class="texto-investigacion">
+              <p>
+                Entre 1847 y 1854, las reformas comerciales, la competencia de
+                manufacturas importadas y las disputas partidistas alteraron las
+                condiciones desde las cuales distintos artesanos interpretaban
+                su lugar en la república.
+              </p>
+              <p>
+                Esta investigación examina las mediaciones entre política
+                arancelaria, organización asociativa y repertorios de acción.
+                El proteccionismo no se trata aquí como una respuesta automática,
+                pues también funcionó como lenguaje político para demandar
+                reconocimiento, participación y capacidad de intervención.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEXTO -->
+    <section id="contexto" class="seccion seccion-oscura">
+      <div class="container">
+        <span class="separador separador-claro"><span>02</span> Contexto</span>
+
+        <header class="encabezado-seccion encabezado-ancho">
+          <h2>Comercio, talleres y disputas republicanas</h2>
+          <p class="lead">
+            La relación entre apertura comercial y trabajo artesanal debe
+            reconstruirse a través de leyes, prensa, asociaciones, oficios
+            concretos y coyunturas políticas.
+          </p>
+        </header>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-4">
+            <article class="tarjeta-contexto h-100">
+              <span class="numero-grande">A</span>
+              <h3>Política comercial</h3>
+              <p>Aranceles, aduanas, importaciones y argumentos sobre industria nacional.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="tarjeta-contexto h-100">
+              <span class="numero-grande">B</span>
+              <h3>Mundo del taller</h3>
+              <p>Oficios, materias primas, circuitos de venta y diferencias internas del artesanado.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="tarjeta-contexto h-100">
+              <span class="numero-grande">C</span>
+              <h3>Intervención política</h3>
+              <p>Sociedades, prensa, peticiones, elecciones, alianzas y movilización pública.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRONOLOGÍA -->
+    <section id="cronologia" class="seccion seccion-clara">
+      <div class="container-fluid px-0">
+        <div class="container">
+          <span class="separador"><span>03</span> Cronología</span>
+
+          <header class="encabezado-seccion encabezado-ancho">
+            <h2>Trayectos de la agencia artesanal</h2>
+            <p class="lead">
+              Desplaza horizontalmente la cronología y selecciona cada hito.
+              La información se abre sobre esta misma página.
             </p>
-        </section>
+          </header>
+        </div>
 
-        <section id="archivo">
-            <h2>Archivo visual</h2>
+        <div class="timeline-shell">
+          <div class="timeline-scroll" id="timelineScroll" tabindex="0"
+               aria-label="Cronología desplazable de 1847 a 1854">
 
-            <figure>
-                <img
-                    src="imagenes/san-cristobal.jpg"
-                    alt="Vista histórica de San Cristóbal Sur">
+            <div class="timeline-axis" aria-hidden="true"></div>
 
-                <figcaption>
-                    Vista de San Cristóbal Sur.
-                    Fuente: archivo de la investigación.
-                </figcaption>
+            <!-- HITO 1 -->
+            <button class="timeline-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1847"
+                    style="--pos: 4%;">
+              <span class="timeline-year">1847</span>
+              <span class="timeline-dot"></span>
+              <span class="timeline-title">Asociación artesanal</span>
+            </button>
+
+            <!-- HITO 2 -->
+            <button class="timeline-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1849"
+                    style="--pos: 25%;">
+              <span class="timeline-year">1849</span>
+              <span class="timeline-dot"></span>
+              <span class="timeline-title">Disputa electoral</span>
+            </button>
+
+            <!-- HITO 3 -->
+            <button class="timeline-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1850"
+                    style="--pos: 43%;">
+              <span class="timeline-year">1850</span>
+              <span class="timeline-dot"></span>
+              <span class="timeline-title">Debate arancelario</span>
+            </button>
+
+            <!-- HITO 4 -->
+            <button class="timeline-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1853"
+                    style="--pos: 70%;">
+              <span class="timeline-year">1853</span>
+              <span class="timeline-dot"></span>
+              <span class="timeline-title">Reordenamiento político</span>
+            </button>
+
+            <!-- HITO 5 -->
+            <button class="timeline-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1854"
+                    style="--pos: 91%;">
+              <span class="timeline-year">1854</span>
+              <span class="timeline-dot"></span>
+              <span class="timeline-title">Crisis y movilización</span>
+            </button>
+          </div>
+
+          <div class="timeline-controls container">
+            <button class="btn btn-outline-dark" id="timelineLeft" type="button">
+              ← Retroceder
+            </button>
+            <button class="btn btn-outline-dark" id="timelineRight" type="button">
+              Avanzar →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPERTORIOS -->
+    <section id="repertorios" class="seccion seccion-acento">
+      <div class="container">
+        <span class="separador separador-claro"><span>04</span> Repertorios</span>
+
+        <header class="encabezado-seccion encabezado-ancho">
+          <h2>Formas de intervenir</h2>
+          <p class="lead">
+            Cada repertorio debe analizarse por su operación, sus destinatarios,
+            sus condiciones de posibilidad y sus límites.
+          </p>
+        </header>
+
+        <div class="accordion accordion-flush mt-5" id="accordionRepertorios">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#repAsociacion"
+                      aria-expanded="true"
+                      aria-controls="repAsociacion">
+                Asociación
+              </button>
+            </h3>
+            <div id="repAsociacion" class="accordion-collapse collapse show"
+                 data-bs-parent="#accordionRepertorios">
+              <div class="accordion-body">
+                Permite transformar intereses dispersos en demandas colectivas,
+                producir vocerías y establecer interlocución con autoridades y partidos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#repPrensa"
+                      aria-expanded="false"
+                      aria-controls="repPrensa">
+                Prensa y argumentación pública
+              </button>
+            </h3>
+            <div id="repPrensa" class="accordion-collapse collapse"
+                 data-bs-parent="#accordionRepertorios">
+              <div class="accordion-body">
+                Hace circular diagnósticos sobre importaciones, trabajo, ciudadanía
+                y protección de la producción local.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#repPeticion"
+                      aria-expanded="false"
+                      aria-controls="repPeticion">
+                Petición y negociación
+              </button>
+            </h3>
+            <div id="repPeticion" class="accordion-collapse collapse"
+                 data-bs-parent="#accordionRepertorios">
+              <div class="accordion-body">
+                Traduce demandas económicas a formatos reconocibles por el Estado:
+                memoriales, solicitudes, reuniones y compromisos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#repMovilizacion"
+                      aria-expanded="false"
+                      aria-controls="repMovilizacion">
+                Movilización y alianza política
+              </button>
+            </h3>
+            <div id="repMovilizacion" class="accordion-collapse collapse"
+                 data-bs-parent="#accordionRepertorios">
+              <div class="accordion-body">
+                Articula presencia pública, participación electoral y vínculos
+                contingentes con sectores partidistas.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVO VISUAL -->
+    <section id="archivo" class="seccion seccion-clara">
+      <div class="container">
+        <span class="separador"><span>05</span> Archivo visual</span>
+
+        <header class="encabezado-seccion encabezado-ancho">
+          <h2>Documentos que sostienen el recorrido</h2>
+          <p class="lead">
+            Sustituye estas imágenes provisionales por mapas, prensa,
+            documentos arancelarios, ilustraciones de oficios o fotografías.
+          </p>
+        </header>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-6">
+            <figure class="archivo-card">
+              <img src="assets/img/documento.svg" alt="Marcador provisional para un documento histórico">
+              <figcaption>
+                <strong>Documento arancelario.</strong><br>
+                Archivo, fondo, fecha y signatura.
+              </figcaption>
             </figure>
-        </section>
+          </div>
+          <div class="col-md-6">
+            <figure class="archivo-card">
+              <img src="assets/img/mapa.svg" alt="Marcador provisional para un mapa histórico">
+              <figcaption>
+                <strong>Mapa de Bogotá artesanal.</strong><br>
+                Autoría, fecha, fuente y operación analítica.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="mapas">
-            <h2>Cartografías</h2>
-
+    <!-- ARGUMENTO -->
+    <section id="argumento" class="seccion seccion-final">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4">
+            <span class="separador separador-claro"><span>06</span> Argumento</span>
+          </div>
+          <div class="col-lg-8">
+            <header class="encabezado-seccion">
+              <h2>Más que una reacción económica</h2>
+            </header>
+            <blockquote>
+              La agencia artesanal se configuró mediante el desplazamiento
+              de preocupaciones productivas hacia lenguajes públicos sobre
+              ciudadanía, representación y orientación económica de la república.
+            </blockquote>
             <p>
-                En esta sección puedes incorporar mapas creados
-                en QGIS, mapas históricos o recorridos territoriales.
+              Esta tesis es provisional. Debe contrastarse con diferencias entre
+              oficios, posiciones internas de las asociaciones y usos concretos
+              del proteccionismo en las fuentes.
             </p>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="hallazgos">
-            <h2>Hallazgos</h2>
+  </main>
 
-            <p>
-                Aquí puedes desarrollar los principales resultados
-                y argumentos de la investigación.
-            </p>
-        </section>
+  <footer class="pie">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <p>Proyecto académico sobre agencia artesanal en Bogotá.</p>
+      <a href="#inicio">Volver al inicio ↑</a>
+    </div>
+  </footer>
 
-        <section id="bibliografia">
-            <h2>Bibliografía</h2>
+  <!-- MODALES DE LA CRONOLOGÍA -->
 
-            <p>
-                Incluye aquí las referencias utilizadas en el proyecto.
-            </p>
-        </section>
+  <div class="modal fade" id="modal1847" tabindex="-1" aria-labelledby="titulo1847" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-year">1847</span>
+            <h2 class="modal-title" id="titulo1847">Asociación artesanal</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/hito-1847.svg" class="modal-image" alt="Imagen provisional para el hito de 1847">
+          <p class="modal-lead">
+            Introduce aquí una síntesis breve del acontecimiento, su fuente
+            principal y su relación con la formación de capacidades colectivas.
+          </p>
+          <p>
+            Evita describir el hito como un hecho aislado: explica qué actores
+            conectó, qué demanda permitió formular y qué cambió en el repertorio artesanal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </main>
+  <div class="modal fade" id="modal1849" tabindex="-1" aria-labelledby="titulo1849" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-year">1849</span>
+            <h2 class="modal-title" id="titulo1849">Disputa electoral</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/hito-1849.svg" class="modal-image" alt="Imagen provisional para el hito de 1849">
+          <p class="modal-lead">
+            Explica aquí cómo la coyuntura electoral amplió o restringió
+            la capacidad de interlocución de las organizaciones artesanales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer>
-        <p>
-            Proyecto de investigación académica.
-            Contenidos e imágenes sujetos a sus respectivos créditos.
-        </p>
-    </footer>
+  <div class="modal fade" id="modal1850" tabindex="-1" aria-labelledby="titulo1850" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-year">1850</span>
+            <h2 class="modal-title" id="titulo1850">Debate arancelario</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/hito-1850.svg" class="modal-image" alt="Imagen provisional para el hito de 1850">
+          <p class="modal-lead">
+            Integra un fragmento de prensa, una disposición comercial o una
+            petición artesanal y explica qué concepción de protección aparece allí.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="modal1853" tabindex="-1" aria-labelledby="titulo1853" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-year">1853</span>
+            <h2 class="modal-title" id="titulo1853">Reordenamiento político</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/hito-1853.svg" class="modal-image" alt="Imagen provisional para el hito de 1853">
+          <p class="modal-lead">
+            Describe las transformaciones institucionales relevantes y conecta
+            esas condiciones con las estrategias disponibles para los artesanos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal1854" tabindex="-1" aria-labelledby="titulo1854" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-year">1854</span>
+            <h2 class="modal-title" id="titulo1854">Crisis y movilización</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/hito-1854.svg" class="modal-image" alt="Imagen provisional para el hito de 1854">
+          <p class="modal-lead">
+            Explica la crisis de 1854 sin presentar a los artesanos como un actor
+            homogéneo. Diferencia organizaciones, dirigentes, bases y posiciones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript de Bootstrap: activa menú, modales y acordeones -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu JavaScript -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
