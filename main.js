@@ -1,50 +1,83 @@
 /* =========================================================
-   Cierra el menú móvil cuando se selecciona una sección
-   ========================================================= */
-const navbarCollapse = document.getElementById("navbarContenido");
+   NAVEGACIÓN ACTIVA
+========================================================= */
 
-document.querySelectorAll("#navbarContenido .nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    if (navbarCollapse.classList.contains("show")) {
-      bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
-    }
-  });
-});
+const secciones = document.querySelectorAll(
+    "article[id], section[id]"
+);
+
+const enlaces = document.querySelectorAll(
+    ".menu a"
+);
+
+
+function actualizarNavegacion() {
+
+    let seccionActual = "";
+
+    secciones.forEach((seccion) => {
+
+        const posicion = seccion.offsetTop - 140;
+
+        if (window.scrollY >= posicion) {
+            seccionActual = seccion.getAttribute("id");
+        }
+
+    });
+
+
+    enlaces.forEach((enlace) => {
+
+        enlace.classList.remove("activo");
+
+        const destino = enlace
+            .getAttribute("href")
+            .replace("#", "");
+
+        if (destino === seccionActual) {
+            enlace.classList.add("activo");
+        }
+
+    });
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    actualizarNavegacion
+);
+
+actualizarNavegacion();
+
+
 
 /* =========================================================
-   Botones de desplazamiento de la cronología
-   ========================================================= */
-const timeline = document.getElementById("timelineScroll");
-const leftButton = document.getElementById("timelineLeft");
-const rightButton = document.getElementById("timelineRight");
+   DESPLAZAMIENTO SUAVE
+========================================================= */
 
-const timelineStep = () => Math.max(280, timeline.clientWidth * 0.72);
+document
+    .querySelectorAll('a[href^="#"]')
+    .forEach((enlace) => {
 
-leftButton.addEventListener("click", () => {
-  timeline.scrollBy({
-    left: -timelineStep(),
-    behavior: "smooth"
-  });
-});
+        enlace.addEventListener(
+            "click",
+            function(event) {
 
-rightButton.addEventListener("click", () => {
-  timeline.scrollBy({
-    left: timelineStep(),
-    behavior: "smooth"
-  });
-});
+                const destino = document.querySelector(
+                    this.getAttribute("href")
+                );
 
-/* =========================================================
-   Permite mover la cronología con las flechas del teclado
-   ========================================================= */
-timeline.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowRight") {
-    event.preventDefault();
-    timeline.scrollBy({ left: 180, behavior: "smooth" });
-  }
+                if (!destino) return;
 
-  if (event.key === "ArrowLeft") {
-    event.preventDefault();
-    timeline.scrollBy({ left: -180, behavior: "smooth" });
-  }
-});
+                event.preventDefault();
+
+                destino.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+        );
+
+    });
