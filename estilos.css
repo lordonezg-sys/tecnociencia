@@ -1,1806 +1,860 @@
-/* =========================================================
-   VARIABLES
-========================================================= */
+<!DOCTYPE html>
+<html lang="es">
 
-:root {
+<head>
+    <meta charset="UTF-8">
 
-    --blanco: #ffffff;
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    --negro: #181818;
+    <meta
+        name="description"
+        content="Ensayo académico sobre la agencia política de los artesanos bogotanos, la Sociedad de Artesanos, la Sociedad Democrática y las disputas por la protección arancelaria en Bogotá entre 1847 y 1854."
+    >
 
-    --gris: #686868;
+    <meta
+        name="author"
+        content="Lauri Milena Ordóñez Gaitán"
+    >
 
-    --gris-medio: #b7b7b7;
+    <meta
+        name="robots"
+        content="index, follow"
+    >
 
-    --gris-claro: #dddddd;
+    <meta
+        property="og:title"
+        content="Agencia artesanal en Bogotá | 1847–1854"
+    >
 
-    --gris-muy-claro: #eeeeee;
+    <meta
+        property="og:description"
+        content="Ensayo sobre artesanos, organización política y protección arancelaria en Bogotá entre 1847 y 1854."
+    >
 
-    --azul: #c6dfec;
+    <meta
+        property="og:type"
+        content="article"
+    >
 
-    --fuente:
-        Helvetica,
-        Arial,
-        sans-serif;
+    <title>Agencia artesanal en Bogotá | 1847–1854</title>
 
-    --ancho-texto: 730px;
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-    --ancho-seccion: 900px;
+<body>
 
-    --ancho-figura: 1040px;
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
 
-    --ancho-general: 1180px;
+    <header class="barra">
 
-}
+        <a href="#inicio" class="titulo-sitio">
+            Agencia artesanal
+        </a>
 
+        <nav class="menu" aria-label="Navegación principal">
+            <a href="#introduccion">Introducción</a>
+            <a href="#argumento-1">I</a>
+            <a href="#argumento-2">II</a>
+            <a href="#argumento-3">III</a>
+            <a href="#conclusiones">Conclusiones</a>
+            <a href="#referencias">Referencias</a>
+        </nav>
 
-/* =========================================================
-   RESET
-========================================================= */
+    </header>
 
-* {
-    box-sizing: border-box;
-}
 
+    <main>
 
-html {
-    scroll-behavior: smooth;
-}
+        <!-- =================================================
+             PORTADA
+        ================================================== -->
 
+        <section id="inicio" class="portada">
 
-body {
+            <div class="contenido-amplio">
 
-    margin: 0;
+                <figure class="imagen-portada">
 
-    background: var(--blanco);
+                    <img
+                        src="Artesanos%20Bog/actividad%20artesanal%20bogotá.png"
+                        alt="Actividad artesanal en Bogotá"
+                    >
 
-    color: var(--negro);
+                    <figcaption>
+                        Imagen de apertura. [Descripción de la imagen].
+                        Fuente: [Archivo, colección, año].
+                    </figcaption>
 
-    font-family: var(--fuente);
+                </figure>
 
-    font-size: 13pt;
+            </div>
 
-    font-weight: 400;
 
-    line-height: 1.7;
+            <div class="contenido-portada">
 
-}
+                <p class="tipo-documento">
+                    ENSAYO · 27.07.2026
+                </p>
 
+                <h1>
+                    Agencia artesanal en Bogotá y su relación con la protección
+                    arancelaria a partir de la Sociedad de Artesanos y la
+                    Sociedad Democrática (1847–1854)
+                </h1>
 
-/* =========================================================
-   SELECCIÓN
-========================================================= */
+                <div class="datos">
+                    <p>Lauri Milena Ordóñez Gaitán</p>
+                    <p>Universidad Nacional de Colombia</p>
+                    <p>Ciencia, industria e imperios</p>
+                    <p>Alexis Hjalmar Alberto De Greiff Acevedo</p>
+                    <p>Trabajo de profundización</p>
+                </div>
 
-::selection {
+                <p class="descripcion">
+                    Este ensayo examina las relaciones entre organización artesanal,
+                    política republicana y controversia arancelaria en Bogotá durante
+                    la coyuntura de 1847 a 1854.
+                </p>
 
-    background: var(--azul);
+            </div>
 
-    color: var(--negro);
+        </section>
 
-}
 
+        <div class="separador-seccion" aria-hidden="true">
+            <span></span>
+        </div>
 
-/* =========================================================
-   NAVEGACIÓN
-========================================================= */
 
-.barra {
+        <!-- =================================================
+             INTRODUCCIÓN
+        ================================================== -->
 
-    position: sticky;
+        <article id="introduccion" class="pagina">
 
-    top: 0;
+            <div class="contenido-seccion">
 
-    z-index: 100;
+                <header class="cabecera-seccion">
 
-    min-height: 64px;
+                    <span class="numero">
+                        00
+                    </span>
 
-    display: flex;
+                    <div>
 
-    align-items: center;
+                        <p class="seccion-superior">
+                            Introducción
+                        </p>
 
-    justify-content: space-between;
+                        <h2>
+                            Artesanos, protección y política
+                            en Bogotá, 1847–1854
+                        </h2>
 
-    gap: 2rem;
+                    </div>
 
-    padding: 0 3.5vw;
+                </header>
 
-    background:
-        rgba(255,255,255,.96);
 
-    border-bottom:
-        1px solid var(--gris-claro);
+                <div class="texto">
 
-    backdrop-filter:
-        blur(10px);
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
-}
+                    <p>It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus, purus sed tincidunt volutpat, erat lorem hendrerit neque, vitae vulputate libero lectus sed augue. Praesent dignissim neque vitae magna facilisis, quis pellentesque sapien consequat.<sup><a href="#nota-intro-1">1</a></sup></p>
 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words.</p>
 
-.titulo-sitio {
 
-    color:
-        var(--negro);
+                    <blockquote>
 
-    text-decoration:
-        none;
+                        <p>
+                            Aquí puedes insertar una cita textual relevante
+                            que abra una discusión historiográfica,
+                            documental o conceptual.
+                        </p>
 
-    font-size:
-        .84rem;
+                        <footer>
+                            Apellido (año, p. XX)
+                        </footer>
 
-    font-weight:
-        600;
+                    </blockquote>
 
-}
 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Este espacio permite continuar el argumento inmediatamente después de la cita, explicando su relevancia para el problema desarrollado.</p>
 
-.menu {
 
-    display:
-        flex;
+                    <div class="pregunta-central">
 
-    align-items:
-        center;
+                        <p class="etiqueta">
+                            Pregunta que guía el ensayo
+                        </p>
 
-    gap:
-        1.35rem;
+                        <h2>
+                            ¿Cómo se configuró la agencia política de los
+                            artesanos bogotanos alrededor de la defensa
+                            de la protección arancelaria entre 1847 y 1854?
+                        </h2>
 
-}
+                    </div>
 
 
-.menu a {
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Este último tramo puede formular el argumento general y anunciar los tres movimientos analíticos del ensayo.</p>
 
-    position:
-        relative;
+                </div>
 
-    padding:
-        1.3rem 0;
 
-    color:
-        var(--gris);
+                <aside class="notas">
 
-    text-decoration:
-        none;
+                    <h3>
+                        Notas
+                    </h3>
 
-    font-size:
-        .67rem;
+                    <ol>
 
-}
+                        <li id="nota-intro-1">
+                            Apunte, precisión documental o discusión bibliográfica
+                            correspondiente a esta sección.
+                        </li>
 
+                    </ol>
 
-.menu a::after {
+                </aside>
 
-    content:
-        "";
+            </div>
 
-    position:
-        absolute;
+        </article>
 
-    left:
-        0;
 
-    bottom:
-        13px;
+        <div class="separador-seccion" aria-hidden="true">
+            <span></span>
+        </div>
 
-    width:
-        0;
 
-    height:
-        3px;
+        <!-- =================================================
+             ARGUMENTO I
+        ================================================== -->
 
-    background:
-        var(--azul);
+        <article id="argumento-1" class="pagina">
 
-    transition:
-        width .2s ease;
+            <div class="contenido-seccion">
 
-}
+                <header class="cabecera-seccion">
 
+                    <span class="numero">
+                        01
+                    </span>
 
-.menu a:hover,
-.menu a.activo {
+                    <div>
 
-    color:
-        var(--negro);
+                        <p class="seccion-superior">
+                            Primer argumento
+                        </p>
 
-}
+                        <h2>
+                            Del taller a la asociación
+                        </h2>
 
+                    </div>
 
-.menu a:hover::after,
-.menu a.activo::after {
+                </header>
 
-    width:
-        100%;
 
-}
+                <p class="tesis-seccion">
+                    [Aquí irá la proposición central que este argumento pretende demostrar.]
+                </p>
 
 
-/* =========================================================
-   MAIN
-========================================================= */
+                <div class="timeline">
 
-main {
+                    <div class="evento">
+                        <span>1847</span>
+                        <div></div>
+                        <p>Evento / documento</p>
+                    </div>
 
-    width:
-        100%;
+                    <div class="evento">
+                        <span>1848</span>
+                        <div></div>
+                        <p>Evento / transformación</p>
+                    </div>
 
-    margin:
-        0;
+                    <div class="evento">
+                        <span>1849</span>
+                        <div></div>
+                        <p>Evento / elección</p>
+                    </div>
 
-    padding:
-        0;
+                    <div class="evento">
+                        <span>1850</span>
+                        <div></div>
+                        <p>Evento / controversia</p>
+                    </div>
 
-}
+                </div>
 
 
-/* =========================================================
-   SECCIONES
+                <div class="texto">
 
-   IMPORTANTE:
-   NO tienen borde, sombra ni ancho de página.
-========================================================= */
+                    <h3>
+                        Asociación, oficio y construcción de intereses
+                    </h3>
 
-.portada,
-.pagina {
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</p>
 
-    width:
-        100%;
+                    <p>It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. Este segundo párrafo representa un desarrollo adicional de la relación entre evidencia, interpretación y argumento.</p>
 
-    margin:
-        0;
+                </div>
 
-    padding:
-        0;
 
-    background:
-        var(--blanco);
+                <figure class="figura">
 
-    border:
-        none;
+                    <div class="placeholder">
+                        FIGURA 1 · DIBUJO / MAPA / ESQUEMA / DOCUMENTO
+                    </div>
 
-    box-shadow:
-        none;
+                    <figcaption>
+                        <strong>Figura 1.</strong>
+                        [Título o descripción].
+                        Fuente: [elaboración propia / archivo / autor].
+                    </figcaption>
 
-}
+                </figure>
 
 
-/* =========================================================
-   MÁRGENES DEL CONTENIDO
+                <div class="texto">
 
-   El margen pertenece al contenido,
-   NO a la sección.
-========================================================= */
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Este párrafo permite analizar la figura y devolverla al argumento escrito.</p>
 
-.contenido-portada,
-.contenido-seccion {
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Este espacio permite continuar la demostración antes de pasar a las notas.</p>
 
-    width:
-        min(
-            calc(100% - 80px),
-            var(--ancho-seccion)
-        );
+                </div>
 
-    margin:
-        0 auto;
 
-}
+                <aside class="notas">
 
+                    <h3>
+                        Notas
+                    </h3>
 
-.contenido-amplio {
+                    <ol>
+                        <li>Nota correspondiente al primer argumento.</li>
+                    </ol>
 
-    width:
-        min(
-            calc(100% - 80px),
-            var(--ancho-general)
-        );
+                </aside>
 
-    margin:
-        0 auto;
+            </div>
 
-}
+        </article>
 
 
-/* =========================================================
-   PORTADA
-========================================================= */
+        <div class="separador-interno" aria-hidden="true"></div>
 
-.portada {
 
-    padding:
-        64px
-        0
-        100px;
+        <!-- =================================================
+             ARGUMENTO I — CONTINUACIÓN
+        ================================================== -->
 
-}
+        <article class="pagina pagina-continuacion">
 
+            <div class="contenido-seccion">
 
-/* =========================================================
-   IMAGEN DE PORTADA
-========================================================= */
+                <header class="cabecera-menor">
 
-.imagen-portada {
+                    <p class="seccion-superior">
+                        Primer argumento · continuación
+                    </p>
 
-    width:
-        100%;
+                    <h2>
+                        Protección, oficio y economía política
+                    </h2>
 
-    margin:
-        0
-        0
-        64px;
+                </header>
 
-}
 
+                <div class="texto">
 
-.imagen-portada img {
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966. Aquí irá el desarrollo de la segunda parte del argumento.</p>
 
-    display:
-        block;
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Este segundo bloque puede introducir posteriormente la tabla.</p>
 
-    width:
-        100%;
+                </div>
 
-    max-height:
-        470px;
 
-    object-fit:
-        cover;
+                <figure class="tabla-figura">
 
-    filter:
-        grayscale(100%);
+                    <figcaption>
+                        <strong>Tabla 1.</strong>
+                        Posiciones frente a la controversia arancelaria.
+                    </figcaption>
 
-}
 
+                    <div class="tabla-scroll">
 
-.imagen-portada figcaption {
+                        <table>
 
-    max-width:
-        var(--ancho-texto);
+                            <thead>
 
-    margin:
-        .8rem
-        auto
-        0;
+                                <tr>
+                                    <th>Actor</th>
+                                    <th>Posición</th>
+                                    <th>Interés</th>
+                                    <th>Evidencia</th>
+                                </tr>
 
-}
+                            </thead>
 
+                            <tbody>
 
-/* =========================================================
-   FICHA
-========================================================= */
+                                <tr>
+                                    <td>Artesanos</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
 
-.tipo-documento {
+                                <tr>
+                                    <td>Liberales</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
 
-    margin:
-        0
-        0
-        28px;
+                                <tr>
+                                    <td>Conservadores</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
 
-    color:
-        var(--gris);
+                            </tbody>
 
-    font-size:
-        10pt;
+                        </table>
 
-    font-weight:
-        500;
+                    </div>
 
-    letter-spacing:
-        .12em;
+                </figure>
 
-    text-transform:
-        uppercase;
 
-}
+                <div class="texto">
 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí se interpreta la tabla y se explican las relaciones relevantes para el argumento.</p>
 
-h1 {
+                </div>
 
-    max-width:
-        900px;
 
-    margin:
-        0
-        0
-        38px;
+                <aside class="notas">
 
-    font-size:
-        clamp(
-            2.25rem,
-            4.3vw,
-            4.35rem
-        );
+                    <h3>Notas</h3>
 
-    font-weight:
-        400;
+                    <ol>
+                        <li>Nota correspondiente a esta parte.</li>
+                    </ol>
 
-    line-height:
-        1.04;
+                </aside>
 
-    letter-spacing:
-        -.035em;
+            </div>
 
-}
+        </article>
 
 
-/* =========================================================
-   DATOS
-========================================================= */
+        <div class="separador-seccion" aria-hidden="true">
+            <span></span>
+        </div>
 
-.datos {
 
-    margin:
-        2.2rem 0;
+        <!-- =================================================
+             ARGUMENTO II
+        ================================================== -->
 
-    font-size:
-        13pt;
+        <article id="argumento-2" class="pagina">
 
-    line-height:
-        1.25;
+            <div class="contenido-seccion">
 
-}
+                <header class="cabecera-seccion">
 
+                    <span class="numero">
+                        02
+                    </span>
 
-.datos p {
+                    <div>
 
-    margin:
-        0
-        0
-        .18rem;
+                        <p class="seccion-superior">
+                            Segundo argumento
+                        </p>
 
-    text-align:
-        left;
+                        <h2>
+                            Alianzas, fracturas y lenguajes políticos
+                        </h2>
 
-    line-height:
-        1.25;
+                    </div>
 
-}
+                </header>
 
 
-/* =========================================================
-   DESCRIPCIÓN
-========================================================= */
+                <p class="tesis-seccion">
+                    [Proposición central del segundo argumento.]
+                </p>
 
-.descripcion {
 
-    max-width:
-        640px;
+                <div class="texto">
 
-    margin:
-        3.2rem
-        0
-        0;
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí irá el desarrollo de las relaciones entre asociaciones, partidos, alianzas y disputas.</p>
 
-    color:
-        var(--gris);
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Este párrafo puede introducir una red de actores o un mapa conceptual.</p>
 
-    font-size:
-        13pt;
+                </div>
 
-    line-height:
-        1.6;
 
-    text-align:
-        justify;
+                <figure class="figura">
 
-    text-justify:
-        inter-word;
+                    <div class="placeholder">
+                        FIGURA 2 · MAPA DE RELACIONES / RED DE ACTORES
+                    </div>
 
-    hyphens:
-        auto;
+                    <figcaption>
+                        <strong>Figura 2.</strong>
+                        Relaciones entre artesanos, asociaciones y actores políticos.
+                        Fuente: elaboración propia.
+                    </figcaption>
 
-}
+                </figure>
 
 
-/* =========================================================
-   SEPARADORES ENTRE SEGMENTOS
-========================================================= */
+                <div class="texto">
 
-.separador {
+                    <h3>
+                        Una alianza no equivale a subordinación
+                    </h3>
 
-    position:
-        relative;
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí puede continuar el análisis después de la figura.</p>
 
-    width:
-        min(
-            calc(100% - 80px),
-            var(--ancho-general)
-        );
+                </div>
 
-    height:
-        25px;
 
-    margin:
-        0 auto;
+                <aside class="notas">
 
-}
+                    <h3>Notas</h3>
 
+                    <ol>
+                        <li>Nota documental o bibliográfica.</li>
+                    </ol>
 
-/* línea izquierda */
+                </aside>
 
-.separador::before {
+            </div>
 
-    content:
-        "";
+        </article>
 
-    position:
-        absolute;
 
-    top:
-        12px;
+        <div class="separador-interno" aria-hidden="true"></div>
 
-    left:
-        0;
 
-    width:
-        calc(50% - 18px);
+        <!-- =================================================
+             ARGUMENTO II — CONTINUACIÓN
+        ================================================== -->
 
-    height:
-        1px;
+        <article class="pagina pagina-continuacion">
 
-    background:
-        var(--gris-claro);
+            <div class="contenido-seccion">
 
-}
+                <header class="cabecera-menor">
 
+                    <p class="seccion-superior">
+                        Segundo argumento · continuación
+                    </p>
 
-/* línea derecha */
+                    <h2>
+                        Las asociaciones como lugares de formación política
+                    </h2>
 
-.separador::after {
+                </header>
 
-    content:
-        "";
 
-    position:
-        absolute;
+                <div class="texto">
 
-    top:
-        12px;
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí continúa el segundo argumento.</p>
 
-    right:
-        0;
 
-    width:
-        calc(50% - 18px);
+                    <blockquote class="cita-grande">
 
-    height:
-        1px;
+                        <p>
+                            Una cita puede ocupar aquí un espacio visual
+                            importante cuando constituya evidencia analítica.
+                        </p>
 
-    background:
-        var(--gris-claro);
+                        <footer>
+                            Autor (año, p. XX)
+                        </footer>
 
-}
+                    </blockquote>
 
 
-/* rombo central */
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí se analiza la cita y se devuelve la evidencia al argumento.</p>
 
-.separador span {
+                </div>
 
-    position:
-        absolute;
 
-    top:
-        8px;
+                <aside class="notas">
 
-    left:
-        50%;
+                    <h3>Notas</h3>
 
-    width:
-        9px;
+                    <ol>
+                        <li>Nota correspondiente.</li>
+                    </ol>
 
-    height:
-        9px;
+                </aside>
 
-    background:
-        var(--azul);
+            </div>
 
-    border:
-        1px solid
-        rgba(24,24,24,.25);
+        </article>
 
-    transform:
-        translateX(-50%)
-        rotate(45deg);
 
-}
+        <div class="separador-seccion" aria-hidden="true">
+            <span></span>
+        </div>
 
 
-/* Separación entre partes del mismo argumento */
+        <!-- =================================================
+             ARGUMENTO III
+        ================================================== -->
 
-.separador-interno {
+        <article id="argumento-3" class="pagina">
 
-    width:
-        min(
-            calc(100% - 140px),
-            900px
-        );
+            <div class="contenido-seccion">
 
-}
+                <header class="cabecera-seccion">
 
+                    <span class="numero">
+                        03
+                    </span>
 
-.separador-interno::before,
-.separador-interno::after {
+                    <div>
 
-    background:
-        var(--gris-muy-claro);
+                        <p class="seccion-superior">
+                            Tercer argumento
+                        </p>
 
-}
+                        <h2>
+                            De la demanda económica
+                            a la disputa por la república
+                        </h2>
 
+                    </div>
 
-/* =========================================================
-   ÁREA DE CADA ARGUMENTO
-========================================================= */
+                </header>
 
-.pagina {
 
-    padding:
-        95px
-        0
-        105px;
+                <p class="tesis-seccion">
+                    [Proposición central del tercer argumento.]
+                </p>
 
-}
 
+                <div class="texto">
 
-/* =========================================================
-   CABECERA DE SECCIÓN
-========================================================= */
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí se desarrolla el tercer argumento.</p>
 
-.cabecera-seccion {
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí puedes construir el desplazamiento entre protección, trabajo, ciudadanía y república.</p>
 
-    display:
-        grid;
+                </div>
 
-    grid-template-columns:
-        62px 1fr;
 
-    column-gap:
-        28px;
+                <div class="comparacion">
 
-    max-width:
-        870px;
+                    <div>
 
-    margin:
-        0
-        auto
-        68px;
+                        <span>1847</span>
 
-    padding-bottom:
-        30px;
+                        <h3>
+                            Defender el oficio
+                        </h3>
 
-    border-bottom:
-        1px solid var(--gris-claro);
+                        <p>
+                            [Evidencia / proceso]
+                        </p>
 
-}
+                    </div>
 
 
-.numero {
+                    <div class="flecha">
+                        →
+                    </div>
 
-    padding-top:
-        7px;
 
-    color:
-        var(--gris);
+                    <div>
 
-    font-size:
-        10pt;
+                        <span>1854</span>
 
-    font-weight:
-        500;
+                        <h3>
+                            Disputar la república
+                        </h3>
 
-    letter-spacing:
-        .08em;
+                        <p>
+                            [Evidencia / proceso]
+                        </p>
 
-}
+                    </div>
 
+                </div>
 
-.seccion-superior {
 
-    margin:
-        0;
+                <div class="texto">
 
-    color:
-        var(--gris);
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí se interpreta el desplazamiento representado anteriormente.</p>
 
-    font-size:
-        10pt;
+                </div>
 
-    font-weight:
-        500;
 
-    line-height:
-        1.3;
+                <aside class="notas">
 
-    letter-spacing:
-        .12em;
+                    <h3>Notas</h3>
 
-    text-transform:
-        uppercase;
+                    <ol>
+                        <li>Nota correspondiente al tercer argumento.</li>
+                    </ol>
 
-    text-align:
-        left;
+                </aside>
 
-}
+            </div>
 
+        </article>
 
-.cabecera-seccion h2 {
 
-    max-width:
-        780px;
+        <div class="separador-seccion" aria-hidden="true">
+            <span></span>
+        </div>
 
-    margin:
-        12px
-        0
-        0;
 
-    font-size:
-        clamp(
-            2rem,
-            3.4vw,
-            3.35rem
-        );
+        <!-- =================================================
+             CONCLUSIONES
+        ================================================== -->
 
-    font-weight:
-        400;
+        <article id="conclusiones" class="pagina">
 
-    line-height:
-        1.08;
+            <div class="contenido-seccion">
 
-    letter-spacing:
-        -.025em;
+                <header class="cabecera-seccion">
 
-}
+                    <span class="numero">
+                        04
+                    </span>
 
+                    <div>
 
-/* =========================================================
-   CABECERA DE CONTINUACIÓN
-========================================================= */
+                        <p class="seccion-superior">
+                            Conclusiones
+                        </p>
 
-.cabecera-menor {
+                        <h2>
+                            Agencia artesanal, economía y ciudadanía
+                        </h2>
 
-    max-width:
-        var(--ancho-texto);
+                    </div>
 
-    margin:
-        0
-        auto
-        62px;
+                </header>
 
-    padding-bottom:
-        26px;
 
-    border-bottom:
-        1px solid var(--gris-claro);
+                <div class="texto">
 
-}
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí se recuperan las respuestas producidas por cada uno de los tres argumentos.</p>
 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aquí pueden señalarse los alcances y límites de la interpretación.</p>
 
-.cabecera-menor h2 {
+                </div>
 
-    margin:
-        12px
-        0
-        0;
 
-    font-size:
-        clamp(
-            1.8rem,
-            3vw,
-            2.8rem
-        );
+                <div class="pregunta-cierre">
 
-    font-weight:
-        400;
+                    <p>
+                        ¿Qué cambia en nuestra interpretación de la política
+                        republicana cuando los artesanos dejan de aparecer
+                        solamente como seguidores de las élites partidistas?
+                    </p>
 
-    line-height:
-        1.1;
+                </div>
 
-}
+            </div>
 
+        </article>
 
-/* =========================================================
-   TEXTO
-========================================================= */
 
-.texto {
+        <div class="separador-seccion" aria-hidden="true">
+            <span></span>
+        </div>
 
-    max-width:
-        var(--ancho-texto);
 
-    margin:
-        0 auto;
+        <!-- =================================================
+             REFERENCIAS
+        ================================================== -->
 
-}
+        <article id="referencias" class="pagina referencias">
 
+            <div class="contenido-seccion">
 
-.texto p {
+                <header class="cabecera-seccion">
 
-    margin:
-        0
-        0
-        1.55rem;
+                    <span class="numero">
+                        05
+                    </span>
 
-    font-size:
-        13pt;
+                    <div>
 
-    line-height:
-        1.72;
+                        <p class="seccion-superior">
+                            Bibliografía
+                        </p>
 
-    text-align:
-        justify;
+                        <h2>
+                            Referencias
+                        </h2>
 
-    text-justify:
-        inter-word;
+                    </div>
 
-    hyphens:
-        auto;
+                </header>
 
-}
 
+                <div class="lista-referencias">
 
-/* =========================================================
-   SUBTÍTULOS
-========================================================= */
+                    <p>
+                        Apellido, N. (Año).
+                        <em>Título del libro.</em>
+                        Editorial.
+                    </p>
 
-.texto h3 {
+                    <p>
+                        Apellido, N. (Año).
+                        Título del artículo.
+                        <em>Nombre de la revista, volumen</em>(número),
+                        xx–xx.
+                    </p>
 
-    margin:
-        4.7rem
-        0
-        1.8rem;
+                </div>
 
-    font-size:
-        1.45rem;
+            </div>
 
-    font-weight:
-        500;
+        </article>
 
-    line-height:
-        1.3;
+    </main>
 
-}
 
+    <footer class="pie-general">
 
-/* =========================================================
-   PREGUNTA CENTRAL
-========================================================= */
+        <p>
+            Universidad Nacional de Colombia · 2026
+        </p>
 
-.pregunta-central {
+        <a href="#inicio">
+            Volver al inicio ↑
+        </a>
 
-    max-width:
-        var(--ancho-texto);
+    </footer>
 
-    margin:
-        6rem
-        auto;
 
-    padding:
-        28px
-        0
-        4px;
+    <script src="main.js"></script>
 
-    border-top:
-        1px solid
-        var(--negro);
+</body>
 
-}
-
-
-.etiqueta {
-
-    margin:
-        0
-        0
-        18px !important;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt !important;
-
-    font-weight:
-        500;
-
-    letter-spacing:
-        .12em;
-
-    text-transform:
-        uppercase;
-
-    text-align:
-        left !important;
-
-}
-
-
-.pregunta-central h2 {
-
-    margin:
-        0;
-
-    font-size:
-        clamp(
-            1.8rem,
-            3vw,
-            3rem
-        );
-
-    font-weight:
-        400;
-
-    line-height:
-        1.18;
-
-}
-
-
-/* =========================================================
-   TESIS
-========================================================= */
-
-.tesis-seccion {
-
-    max-width:
-        810px;
-
-    margin:
-        -10px
-        auto
-        65px;
-
-    padding:
-        4px
-        0
-        4px
-        24px;
-
-    border-left:
-        5px solid
-        var(--azul);
-
-    font-size:
-        1.25rem;
-
-    line-height:
-        1.5;
-
-    text-align:
-        justify;
-
-}
-
-
-/* =========================================================
-   CITAS
-========================================================= */
-
-blockquote {
-
-    margin:
-        58px 0;
-
-    padding:
-        22px
-        12px
-        22px
-        34px;
-
-    border-left:
-        2px solid
-        var(--negro);
-
-}
-
-
-blockquote p {
-
-    margin:
-        0 !important;
-
-    font-size:
-        1.08rem !important;
-
-    line-height:
-        1.58 !important;
-
-    text-align:
-        left !important;
-
-}
-
-
-blockquote footer {
-
-    margin-top:
-        18px;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-}
-
-
-.cita-grande {
-
-    padding:
-        2rem 0;
-
-    border-left:
-        0;
-
-    border-top:
-        1px solid
-        var(--negro);
-
-    border-bottom:
-        1px solid
-        var(--negro);
-
-}
-
-
-/* =========================================================
-   FIGURAS
-========================================================= */
-
-.figura {
-
-    width:
-        min(
-            100%,
-            var(--ancho-figura)
-        );
-
-    margin:
-        75px
-        auto;
-
-}
-
-
-.figura img {
-
-    display:
-        block;
-
-    width:
-        100%;
-
-}
-
-
-.placeholder {
-
-    min-height:
-        370px;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        2rem;
-
-    background:
-        #fafafa;
-
-    border-top:
-        1px solid
-        var(--gris-claro);
-
-    border-bottom:
-        1px solid
-        var(--gris-claro);
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-    letter-spacing:
-        .1em;
-
-    text-align:
-        center;
-
-}
-
-
-/* =========================================================
-   PIES DE FIGURA
-========================================================= */
-
-figcaption {
-
-    margin-top:
-        .8rem;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-    line-height:
-        1.4;
-
-}
-
-
-/* =========================================================
-   NOTAS
-========================================================= */
-
-.notas {
-
-    max-width:
-        var(--ancho-texto);
-
-    margin:
-        90px
-        auto
-        0;
-
-    padding-top:
-        18px;
-
-    border-top:
-        1px solid
-        var(--negro);
-
-}
-
-
-.notas h3 {
-
-    margin:
-        0
-        0
-        20px;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-    letter-spacing:
-        .12em;
-
-    text-transform:
-        uppercase;
-
-}
-
-
-.notas ol {
-
-    margin:
-        0;
-
-    padding-left:
-        1.2rem;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-    line-height:
-        1.55;
-
-}
-
-
-.notas li {
-
-    margin-bottom:
-        .8rem;
-
-    text-align:
-        justify;
-
-}
-
-
-/* =========================================================
-   LÍNEA DE TIEMPO
-========================================================= */
-
-.timeline {
-
-    max-width:
-        900px;
-
-    margin:
-        20px
-        auto
-        78px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-}
-
-
-.evento span {
-
-    font-size:
-        10pt;
-
-    font-weight:
-        600;
-
-}
-
-
-.evento > div {
-
-    position:
-        relative;
-
-    width:
-        100%;
-
-    height:
-        4px;
-
-    margin:
-        10px
-        0
-        13px;
-
-    background:
-        var(--azul);
-
-}
-
-
-.evento > div::before {
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    left:
-        0;
-
-    top:
-        50%;
-
-    width:
-        9px;
-
-    height:
-        9px;
-
-    background:
-        var(--blanco);
-
-    border:
-        1px solid
-        var(--negro);
-
-    border-radius:
-        50%;
-
-    transform:
-        translateY(-50%);
-
-}
-
-
-.evento p {
-
-    margin:
-        0;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-    line-height:
-        1.4;
-
-}
-
-
-/* =========================================================
-   TABLA
-========================================================= */
-
-.tabla-figura {
-
-    max-width:
-        var(--ancho-figura);
-
-    margin:
-        75px auto;
-
-}
-
-
-.tabla-scroll {
-
-    overflow-x:
-        auto;
-
-}
-
-
-table {
-
-    width:
-        100%;
-
-    border-collapse:
-        collapse;
-
-    font-size:
-        11pt;
-
-}
-
-
-th {
-
-    padding:
-        12px 10px;
-
-    color:
-        var(--gris);
-
-    font-size:
-        9pt;
-
-    text-align:
-        left;
-
-    text-transform:
-        uppercase;
-
-    letter-spacing:
-        .07em;
-
-    border-top:
-        1px solid
-        var(--negro);
-
-    border-bottom:
-        1px solid
-        var(--negro);
-
-}
-
-
-td {
-
-    padding:
-        14px 10px;
-
-    border-bottom:
-        1px solid
-        var(--gris-claro);
-
-}
-
-
-/* =========================================================
-   COMPARACIÓN
-========================================================= */
-
-.comparacion {
-
-    max-width:
-        880px;
-
-    margin:
-        6rem auto;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1fr
-        auto
-        1fr;
-
-    align-items:
-        center;
-
-    gap:
-        3rem;
-
-}
-
-
-.comparacion > div:not(.flecha) {
-
-    padding-top:
-        1rem;
-
-    border-top:
-        5px solid
-        var(--azul);
-
-}
-
-
-.comparacion span {
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-}
-
-
-.comparacion h3 {
-
-    font-size:
-        1.45rem;
-
-    font-weight:
-        500;
-
-}
-
-
-.comparacion p {
-
-    color:
-        var(--gris);
-
-    font-size:
-        11pt;
-
-}
-
-
-/* =========================================================
-   CIERRE
-========================================================= */
-
-.pregunta-cierre {
-
-    max-width:
-        820px;
-
-    margin:
-        7rem
-        auto
-        2rem;
-
-    padding-top:
-        28px;
-
-    border-top:
-        1px solid
-        var(--negro);
-
-}
-
-
-.pregunta-cierre p {
-
-    margin:
-        0;
-
-    font-size:
-        1.65rem;
-
-    line-height:
-        1.4;
-
-    text-align:
-        justify;
-
-}
-
-
-/* =========================================================
-   REFERENCIAS
-========================================================= */
-
-.lista-referencias {
-
-    max-width:
-        var(--ancho-texto);
-
-    margin:
-        0 auto;
-
-}
-
-
-.lista-referencias p {
-
-    margin:
-        0
-        0
-        1.5rem;
-
-    padding-left:
-        2.4rem;
-
-    font-size:
-        12pt;
-
-    line-height:
-        1.55;
-
-    text-indent:
-        -2.4rem;
-
-}
-
-
-/* =========================================================
-   PIE
-========================================================= */
-
-.pie-general {
-
-    width:
-        min(
-            calc(100% - 80px),
-            var(--ancho-general)
-        );
-
-    margin:
-        0 auto;
-
-    padding:
-        40px
-        0
-        55px;
-
-    display:
-        flex;
-
-    justify-content:
-        space-between;
-
-    color:
-        var(--gris);
-
-    font-size:
-        10pt;
-
-}
-
-
-.pie-general p {
-
-    margin:
-        0;
-
-}
-
-
-.pie-general a {
-
-    color:
-        var(--negro);
-
-    text-decoration:
-        none;
-
-}
-
-
-/* =========================================================
-   TABLETA
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .contenido-portada,
-    .contenido-seccion {
-
-        width:
-            calc(100% - 56px);
-
-    }
-
-
-    .contenido-amplio {
-
-        width:
-            calc(100% - 56px);
-
-    }
-
-
-    .separador {
-
-        width:
-            calc(100% - 56px);
-
-    }
-
-}
-
-
-/* =========================================================
-   MÓVIL
-========================================================= */
-
-@media (max-width: 760px) {
-
-
-    body {
-
-        font-size:
-            12pt;
-
-    }
-
-
-    .barra {
-
-        align-items:
-            flex-start;
-
-        padding:
-            13px
-            16px;
-
-    }
-
-
-    .menu {
-
-        flex-wrap:
-            wrap;
-
-        justify-content:
-            flex-end;
-
-        gap:
-            .5rem
-            .8rem;
-
-    }
-
-
-    .menu a {
-
-        padding:
-            .25rem 0;
-
-        font-size:
-            .58rem;
-
-    }
-
-
-    .contenido-portada,
-    .contenido-seccion,
-    .contenido-amplio {
-
-        width:
-            calc(100% - 36px);
-
-    }
-
-
-    .portada {
-
-        padding:
-            40px
-            0
-            65px;
-
-    }
-
-
-    .pagina {
-
-        padding:
-            65px
-            0
-            70px;
-
-    }
-
-
-    .separador {
-
-        width:
-            calc(100% - 36px);
-
-    }
-
-
-    .cabecera-seccion {
-
-        grid-template-columns:
-            1fr;
-
-        gap:
-            6px;
-
-    }
-
-
-    .cabecera-seccion h2 {
-
-        font-size:
-            2.1rem;
-
-    }
-
-
-    .texto p {
-
-        font-size:
-            12pt;
-
-    }
-
-
-    .timeline {
-
-        grid-template-columns:
-            1fr;
-
-        gap:
-            30px;
-
-    }
-
-
-    .comparacion {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-
-    .flecha {
-
-        width:
-            fit-content;
-
-        margin:
-            0 auto;
-
-        transform:
-            rotate(90deg);
-
-    }
-
-
-    .pie-general {
-
-        width:
-            calc(100% - 36px);
-
-        flex-direction:
-            column;
-
-        gap:
-            .6rem;
-
-    }
-
-}
+</html>
