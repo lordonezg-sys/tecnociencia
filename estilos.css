@@ -302,7 +302,33 @@ main {
 
     background: var(--gris-muy-claro);
 }
+/* =========================================================
+   IMAGEN DE APERTURA A TODO EL ANCHO
+========================================================= */
 
+.imagen-portada-ancha {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen-portada {
+    width: 100%;
+    margin: 0 0 64px;
+}
+
+.imagen-portada img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 470px;
+
+    object-fit: cover;
+
+    filter: grayscale(100%);
+}
 
 /* =========================================================
    IMAGEN DE PORTADA
